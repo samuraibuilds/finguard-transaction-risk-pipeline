@@ -1,0 +1,1 @@
+Synthetic dataset generated with seed 20261030. 2,400 rows. Five injected quality defects demonstrate quarantine behavior. Probabilistic fraud labels are educational and do not represent real customers, banks, or fraud prevalence.

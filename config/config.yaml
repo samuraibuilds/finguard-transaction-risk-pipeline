@@ -1,0 +1,26 @@
+project:
+  random_seed: 42
+  batch_id: demo-batch-001
+paths:
+  input_csv: data/raw/sample/transactions.csv
+  processed_dir: data/processed
+  quarantine_dir: data/quarantine
+  model_dir: artifacts/models
+  scored_dir: outputs/scored
+  reports_dir: reports
+  monitoring_dir: monitoring
+  sqlite_path: data/finguard_metadata.db
+validation:
+  supported_currencies: [INR, USD, EUR]
+  allowed_categories: [grocery, travel, electronics, fuel, food, health, retail, utilities]
+  allowed_payment_methods: [card, upi, bank_transfer, wallet]
+  max_rejection_rate: 0.35
+  min_amount: 0.01
+  max_amount: 1000000
+model:
+  threshold: 0.5
+  high_risk_threshold: 0.7
+  version: finguard-1.0.0
+spark:
+  app_name: FinGuardBatch
+  shuffle_partitions: 2

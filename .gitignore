@@ -1,0 +1,59 @@
+﻿# Python environments
+.venv/
+.venv-*/
+venv/
+env/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated data
+data/processed/
+data/quarantine/
+data/*.db
+
+# Generated model artifacts
+artifacts/models/
+*.joblib
+
+# Generated scoring outputs
+outputs/scored/
+
+# Generated reports (keep folder placeholder)
+reports/*
+!reports/.gitkeep
+
+# Generated monitoring outputs (keep folder placeholder)
+monitoring/*
+!monitoring/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Spark and Hadoop temporary files
+*.crc
+spark-warehouse/
+metastore_db/
